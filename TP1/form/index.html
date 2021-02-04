@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <title>Formulaires</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+
+    <body>
+
+
+
+        <form method="get" action="form.php">
+
+            <label for="name_id">Votre nom :</label>
+            <input type="text" id="name_id" name="name" />
+
+            <br />
+            
+            <label for="gender_id">Votre sexe :</label>
+            <select name="gender" id="gender_id">
+
+            	<option value="m">Homme</option>
+            	<option value="f">Femme</option>
+            	<option value="u">Je ne sais pas</option>
+
+            </select>
+
+            <br />
+
+            <label for="comment_id">Un commentaire ?</label>
+            <textarea style="resize: none; color: magenta; font-weight: bold" rows="5" cols="20" name="comment" id="comment_id" placeholder="Tape du texte chacal"></textarea>
+
+            <br />
+            
+            <input type="submit" value="Envoyer" />
+            <input type="reset" value="Réinitialiser" />
+
+        </form>
+
+
+
+    </body>
+
+</html>
