@@ -1,11 +1,4 @@
-<?php
-	
-	function resultat($somme, $taux, $duree) {
-		$cumul = $somme * ( 1 + $taux/100 ) ** $duree;
-		return $cumul;
-	}
-
-?>
+<?php require_once("libcalcul.php");?>
 
 <!DOCTYPE HTML>
 <html>
@@ -18,7 +11,7 @@
     <body>
         <p>
 			<?php
-				echo "Résultat = " . resultat($_GET["somme"], $_GET["taux"], $_GET["duree"]);
+				echo "Résultat = " . resultat($_POST["somme"], $_POST["taux"], $_POST["duree"]);
 			?>
 		</p>
     </body>
