@@ -1,0 +1,12 @@
+table {
+	border: solid black 2px;
+}
+
+a {
+	color: green;
+	text-decoration: none;
+}
+
+ul a {
+	font-weight: bold;
+}
