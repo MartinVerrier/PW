@@ -1,3 +1,25 @@
+<?php
+    session_start();
+
+    if ($_GET["event"] != "") {
+        $_SESSION[$_GET["date"]] = $_GET["event"];
+    }
+
+
+    function formatDate($date) {
+        $month = $date["mon"];
+        if ($month < 10)
+            $month = "0" . $month;
+
+        $day = $date["mday"];
+        if ($day < 10)
+            $day = "0" . $day;
+
+        return $date["year"] . "-" . $month . "-" . $day;
+    }
+?>
+
+
 <html>
     <head>
         <title>Calendrier 3</title>
@@ -7,7 +29,7 @@
         </style>
     </head>
     <body>
-        <?php 
+        <?php
             $date = explode("-",$_GET["date"]);
             $first = mktime(0,0,0,$date[1],1,$date[0]);
             $offset = date("N",$first);
@@ -21,8 +43,9 @@
                     if($i >= 1 && $i <= intval(date("t",$first))) {
                         $tmp = getdate(mktime(0,0,0,date("m",$first),$i,date("y",$first)));
                         echo $tmp["mday"];
-                        if($i == intval($date[2])) {
-                            echo "</br><span>" . $_GET["event"] . "</span>";
+                        $formattedDate = formatDate($tmp);
+                        if(isset($_SESSION[$formattedDate])) {
+                            echo "</br><span>" . $_SESSION[$formattedDate] . "</span>";
                         }
                     }
                     echo "</td>";
@@ -31,5 +54,8 @@
             }
             echo "</tbody></table>";
         ?>
+        <br />
+        <a href="index_6.html"><input type="button" value="Revenir à l'accueil" /></a>
+        <a href="logout.php"><input type="button" value="Se déconnecter" /></a>
     </body>
 </html
