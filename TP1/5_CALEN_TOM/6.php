@@ -24,7 +24,8 @@
     <head>
         <title>Calendrier 3</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <style type="text/css"> 
+        <style type="text/css">
+            table {border-collapse: collapse;}
             td {text-align : center;border: 1px solid black}
         </style>
     </head>
