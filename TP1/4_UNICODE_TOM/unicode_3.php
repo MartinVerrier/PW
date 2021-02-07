@@ -2,7 +2,8 @@
     <head>
         <title>Unicode</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <style type="text/css"> 
+        <style type="text/css">
+            table {border-collapse: collapse;}
             .carac {font-weight : bold; font-size : 30pt;}
             td {text-align : center; border : 1px solid black;}
         </style>

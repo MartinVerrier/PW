@@ -10,7 +10,8 @@
     <head>
         <title>Unicode</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <style type="text/css"> 
+        <style type="text/css">
+            table {border-collapse: collapse;}
             .carac {font-weight : bold; font-size : 30pt;}
             td {text-align : center; border : 1px solid black;}
             td:hover {background-color: yellow;}
@@ -27,7 +28,7 @@
             echo "<table><tbody><tr>";
             for($i = $inf; $i < $sup; $i++) {
                 $nb = dechex($i);
-                echo  "<td>\n<span class=\"carac\">" . mb_chr($i) . "</span>\n</br>\n<a href=\"http://unicode.org/cldr/utility/character.jsp?a=$nb\">U+$nb</a>\n<span class=\"normalized\">\n<br />\n" . getNormalizedName($i) . "\n</span>\n</td>";
+                echo  "<td>\n<span class=\"carac\">" . mb_chr($i) . "</span>\n<br />\n<a href=\"http://unicode.org/cldr/utility/character.jsp?a=$nb\">U+$nb</a>\n<span class=\"normalized\">\n<br />\n" . getNormalizedName($i) . "\n</span>\n</td>";
             }
             echo "</tr></tbody></table>";
         ?>
