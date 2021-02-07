@@ -56,6 +56,7 @@
             echo "</tbody></table>";
         ?>
         <br />
+
         <a href="index_6.html"><input type="button" value="Revenir à l'accueil" /></a>
         <a href="logout.php"><input type="button" value="Se déconnecter" /></a>
     </body>
