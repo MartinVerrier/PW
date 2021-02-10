@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @param float $lon
  * @param float $lat
@@ -33,14 +32,14 @@ function smartcurl($url, $verb) {
     $ch = curl_init();
 	
 	if ($verb == 2) { echo "$url\n"; }
-    if ($verb == 1) { echo "." ; }
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  if ($verb == 1) { echo "." ; }
+  curl_setopt($ch, CURLOPT_URL, $url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-    $output = curl_exec($ch);
-    curl_close($ch);      
+  $output = curl_exec($ch);
+  curl_close($ch);      
 
-    return $output;
+  return $output;
 }
 
 
