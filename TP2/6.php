@@ -1,14 +1,5 @@
 <?php  
     require_once("4.php");
-    function distance ($p, $q) {
-        $scale = 10000000 / 90; // longueur d'un degré le long d'un méridien
-        $a = ((float)$p['lon'] - (float)$q['lon']);
-        $b = (cos((float)$p['lat']/180.0*M_PI) * ((float)$p['lat'] - (float)$q['lat']));
-        $res = $scale * sqrt( $a**2 + $b**2 );
-        return (float)sprintf("%5.1f", $res);
-    }
-
-    $points = getAccesspoints("Données/borneswifi_EPSG4326_20171004_utf8.csv");
     $ref = array( // place grenette
         'lon' => 5.72752,
         'lat' => 45.19102

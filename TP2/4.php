@@ -1,12 +1,6 @@
 <?php
-    function initAccesspoint($row) {
-        return array(
-            'name' => $row[0], //string
-            'adr' => $row[1],  //string
-            'lon' => $row[2],  //float, in decimal degrees
-            'lat' => $row[3]   //float, in decimal degrees
-        );  
-    }
+    require_once("Helpers/tp2-helpers.php");
+
     function getAccesspoints($strfile) {
         $file = fopen($strfile, "r");
         //$tab = [];
