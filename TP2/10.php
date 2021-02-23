@@ -32,7 +32,7 @@
         </style>
     </head>
     <body>
-        <h2>Voici les <?php echo $_GET["top"]; ?> points d'accès les plus proches :</h2>
+        <h2>Voici les <?php echo $_GET["top"]; ?> points d'accès les plus proches</h2>
     	<table>
             <tr>
                 <th>Nom</th>
