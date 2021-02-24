@@ -1,0 +1,40 @@
+body, html {
+	display: grid;
+	height: 100%;
+}
+
+body {
+	color: white;
+	font-family: "Arial";
+	background-color: #001064;
+}
+
+form {
+	background-color: #283593;
+	text-align: center;
+	margin: auto;
+	padding: 3em 15em;
+	border-radius: 2em;
+    box-shadow: 0 0.5em 1em #0007;
+}
+
+label {
+	font-weight: bold;
+	margin: 0 1em 0 0;
+}
+
+input, select {
+	margin: 1.2em 0;
+}
+
+input[type="submit"] {
+	margin: 3em 0;
+}
+
+#lon, #lat {
+	max-width: 6em;
+}
+
+#top {
+	max-width: 3em;
+}
