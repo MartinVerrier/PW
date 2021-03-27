@@ -1,0 +1,105 @@
+===== UTILISATION DE THE MOVIE DATABASE =====
+
+Cette partie a été traitée en intégralité
+
+
+
+1.
+Le format de réponse est en JSON.
+
+En spécifiant le paramètre language=fr (https://api.themoviedb.org/3/movie/551?api_key=ebb02613ce5a2ae58fde00f4db95a9c1&language=fr), on constate que le nom du film est en français (ici c'est "L'aventure du Poséidon" au lieu de "The Poseidon Adventure").
+
+
+
+
+
+2.
+curl https://api.themoviedb.org/3/movie/550?api_key=ebb02613ce5a2ae58fde00f4db95a9c1
+
+Le programme se trouve dans le fichier 2.php.
+
+
+
+
+
+3.
+La page web du formulaire (afin de renseigner l'identifiant du film) correspond au fichier 3_form.html.
+
+Cette dernière redirige vers 3_page.php.
+
+
+
+
+
+4.
+La page web du formulaire (afin de renseigner l'identifiant du film) correspond au fichier 4_form.html.
+
+Cette dernière redirige vers 4_page.php.
+
+
+
+
+
+5.
+La page web du formulaire (afin de renseigner l'identifiant du film) correspond au fichier 5_form.html.
+
+Cette dernière redirige vers 5_page.php.
+
+
+
+
+
+6.
+Le fichier 6.php est une page web dynamique à ouvrir dans le navigateur.
+
+Le code PHP va rechercher tous les films de la collection du Seigneur des Anneaux et va les afficher dans la page web générée.
+
+
+
+
+
+7.
+Le fichier 7.php est une page web dynamique à ouvrir dans le navigateur.
+
+Le code PHP va rechercher et traiter les données des acteurs de la collection du Seigneur des Anneaux et va les afficher dans la page web générée.
+
+
+
+
+
+8.
+Nous ne savons pas s'il est possible d'afficher uniquement les acteurs jouant des hobbits.
+
+
+En revanche, deux solutions ont été explorées afin de tenter de répondre à cette question :
+    
+    - On aurait pû afficher seulement les acteurs dont le rôle contient le mot Hobbit (insensible à la casse), mais pour le rôle de Frodo Baggins, ce mot-clé n'est pas présent.
+    
+    - Une seconde solution aurait été d'afficher les acteurs en fonction de leur genre (gender), mais nous avons remarqué que les Hobbits pouvaient avoir un gender à 0, 1 ou 2, ce qui n'aide pas vraiment
+
+
+
+
+
+9.
+Pour répondre à cette question, nous avons repris le code de la question 7 en ajoutant un lien au nom chaque acteur, renvoyant vers leur page TMDB respective.
+
+En effet, cette page renseigne tous les films joués par chaque acteur, ainsi que leur rôle dans chacun des films.
+
+Le fichier 9.php est une page web dynamique à ouvrir dans le navigateur.
+
+Le code PHP va rechercher et traiter les données des acteurs de la collection du Seigneur des Anneaux et va les afficher dans la page web générée.
+
+
+
+
+
+10.
+Pour cette question, nous avons intégré des lecteurs YouTube embedded dans des balises <iframe>.
+
+Le fichier 10.php reprend le code de 6.php en y ajoutant les lecteurs vidéo, il traite donc sur la trilogie du Seigneur des Anneaux.
+
+
+Les fichiers 10_form.html et 10_page.php reprennent le code de la question 5, en y ajoutant les lecteurs vidéo. Ainsi, la page web du formulaire (afin de renseigner l'identifiant du film) correspond au fichier 10_form.html.
+
+Cette dernière redirige vers 10_page.php.

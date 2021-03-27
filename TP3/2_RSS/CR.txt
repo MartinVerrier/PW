@@ -1,0 +1,8 @@
+===== ANALYSE D'UN FLUX RSS DE PODCAST =====
+
+Cette partie n'a été traitée qu'en partie (Mise en jambes)
+
+
+
+1.
+Le fichier 1.php est une page web dynamique à ouvrir dans le navigateur.
