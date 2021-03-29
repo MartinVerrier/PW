@@ -10,6 +10,6 @@
 			'lat' => $json_point["geometry"]["coordinates"][1]
 		);
 	}
-
+	
 	//var_dump($points);
 ?>
